@@ -8,7 +8,7 @@
 - 安装python3和pip，[安装包地址](https://www.python.org/downloads/)
 - 使用pip安装kdAutoTeamviewer，命令
 > pip install kdAutoTeamviewer
-- 你也可以使用[kdPythonInstaller(https://github.com/bkdwei/kdPythonInstaller/releases/download/v1.0.0/kdPythonInstaller-1.0.0.exe)来安装python和kdAutoTeamviewer
+- 你也可以使用[kdPythonInstaller(https://github.com/bkdwei/kdPythonInstaller/releases/download/v1.0.0/kdPythonInstaller-1.0.0.exe/)来安装python和kdAutoTeamviewer
 
 # 使用方式
 - 在主目录（比如C:\Users\bkd\）新建kdAutoTeamviewer.ini配置文件，并写入自己邮箱的用户名和密码，以及接收截图的邮箱。
