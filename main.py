@@ -5,8 +5,11 @@
 Created on 2019年4月5日
 @author: bkd
 '''
-
-from kdAutoTeamviewer.kdAutoTeamviewer import main
+from tkinter import messagebox
 
 if __name__ == '__main__':
-    main()
+    try:
+        from kdAutoTeamviewer.kdAutoTeamviewer import main
+        main()
+    except Exception as e:
+        messagebox.showerror("系统异常", str(e))

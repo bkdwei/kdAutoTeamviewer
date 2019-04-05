@@ -11,7 +11,7 @@ with open("README.md", "r",encoding="utf-8") as fh:
 setup(
 #     固定部分
     name="kdAutoTeamviewer",
-    version="1.0.0",
+    version="1.0.1",
     author="bkdwei",
     author_email="bkdwei@163.com",
     maintainer="韦坤东",
@@ -23,7 +23,7 @@ setup(
     platforms=["any"],
     
 #     需要安装的依赖
-    install_requires=["PyQt5"],
+    install_requires=["PyQt5","mss"],
     packages=find_packages(),
     zip_safe=False,
     include_package_data=True,

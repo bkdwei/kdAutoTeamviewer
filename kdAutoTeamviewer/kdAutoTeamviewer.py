@@ -8,6 +8,7 @@ try:
     import win32gui
 except Exception as e:
     pass
+from mss import mss
 from os.path import expanduser,join
 import sys
 import time    
@@ -35,10 +36,8 @@ class kdAutoTeamviewer(QMainWindow):
         startfile(join(expanduser("~"),"teamviewer.exe.lnk"))
     @pyqtSlot()
     def on_pb_take_screenshot_clicked(self):
-        hwnd = win32gui.FindWindow(None, 'C:\Windows\system32\cmd.exe') 
-        screen = QApplication.primaryScreen() 
-        img = screen.grabWindow(hwnd).toImage() 
-        img.save(join(expanduser("~"),"teamviewer_sreenshot.png"))
+        with mss() as sct:
+            sct.shot(mon = -1 ,output=join(expanduser("~"),"teamviewer_sreenshot.png"))
     @pyqtSlot()    
     def on_pb_send_mail_clicked(self):
         #设置smtplib所需的参数
